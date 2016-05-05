@@ -2,6 +2,7 @@ package hello;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import hello.Record;
@@ -11,7 +12,7 @@ class addArtistController {
 
     @Autowired Record record;
 
-    @RequestMapping("/add-artist")
+    @RequestMapping(value = "/add-artist", method = RequestMethod.POST)
     public Artist addArtist(@RequestParam(value = "name", defaultValue = "Cher") String name,
                             @RequestParam(value = "age", defaultValue = "70") String age,
                             @RequestParam(value = "instrument", defaultValue = "voice") String instrument,
