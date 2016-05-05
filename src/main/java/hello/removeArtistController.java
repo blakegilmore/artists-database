@@ -1,10 +1,7 @@
 package hello;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
@@ -13,8 +10,9 @@ class removeArtistController {
 
     @Autowired Record record;
 
-    @RequestMapping(value = "/remove-artist", method = RequestMethod.DELETE)
-    public void removeArtist(@RequestParam(value = "input", defaultValue = "1") String input) {
-        record.removeArtist(Integer.parseInt(input));
+    @RequestMapping(value = "/artists/{id}", method = RequestMethod.DELETE)
+    public void removeArtist(@PathVariable("id") String id)
+    {
+        record.removeArtist(Integer.parseInt(id));
     }
 }
