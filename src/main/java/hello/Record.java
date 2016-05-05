@@ -17,15 +17,13 @@ public class Record {
         artists = new ArrayList<Artist>();
     }
 
-    List<Artist> viewArtist(int intInput) {
+    Artist viewArtist(int intInput) {
         try {
             System.out.println(artists.get(intInput - 1));
-            ArrayList container = new ArrayList();
-            container.add(artists.get(intInput - 1));
-            return container;
+            return artists.get(intInput - 1);
         } catch (IndexOutOfBoundsException e){
             System.out.println("That artist doesn't exist.");
-            return Collections.EMPTY_LIST;
+            return new Artist("a","a","a","a","a","a");
         }
     }
 
