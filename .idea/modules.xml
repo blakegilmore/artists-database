@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/favorite artists database.iml" filepath="$PROJECT_DIR$/.idea/modules/favorite artists database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/favorite_artists_database_main.iml" filepath="$PROJECT_DIR$/.idea/modules/favorite_artists_database_main.iml" group="favorite artists database" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/favorite_artists_database_test.iml" filepath="$PROJECT_DIR$/.idea/modules/favorite_artists_database_test.iml" group="favorite artists database" />
+    </modules>
+  </component>
+</project>
