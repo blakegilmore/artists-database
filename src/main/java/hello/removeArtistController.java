@@ -13,8 +13,7 @@ class removeArtistController {
     @Autowired Record record;
 
     @RequestMapping("/remove-artist")
-    public ArrayList<Artist> removeArtist(@RequestParam(value = "input", defaultValue = "1") String input) {
+    public void removeArtist(@RequestParam(value = "input", defaultValue = "1") String input) {
         record.removeArtist(Integer.parseInt(input));
-        return record.artists;
     }
 }
