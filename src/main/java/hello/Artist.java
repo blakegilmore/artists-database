@@ -26,6 +26,9 @@ public class Artist {
                 '}';
     }
 
+    public Artist (){
+    }
+
     public Artist(String name, String age, String instrument, String genre, String ethnicity, String mostFamousWork) {
         this.name = name;
         this.age = age;
